@@ -751,7 +751,7 @@ class AnyType(ComfyTypeIO):
     Type = Any
 
 @comfytype(io_type="MODEL_PATCH")
-class MODEL_PATCH(ComfyTypeIO):
+class ModelPatch(ComfyTypeIO):
     Type = Any
 
 @comfytype(io_type="AUDIO_ENCODER")
@@ -1923,6 +1923,7 @@ __all__ = [
     "ControlNet",
     "Vae",
     "Model",
+    "ModelPatch",
     "ClipVision",
     "ClipVisionOutput",
     "AudioEncoder",
