@@ -710,7 +710,7 @@ class MeshyTextureNode(IO.ComfyNode):
         if text_style_prompt and image_style is not None:
             raise ValueError("text_style_prompt and image_style cannot be used at the same time")
         if not text_style_prompt and image_style is None:
-            raise ValueError("One of the text_style_prompt or image_style is required")
+            raise ValueError("Either text_style_prompt or image_style is required")
         image_style_url = None
         if image_style is not None:
             image_style_url = (await upload_images_to_comfyapi(cls, image_style, wait_label="Uploading style"))[0]
